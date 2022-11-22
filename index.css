@@ -1,0 +1,10 @@
+#layout:after{
+    content: "";
+    display: table;
+    clear:both;
+}
+
+.row{
+    float:left;
+    width: 25%;
+}

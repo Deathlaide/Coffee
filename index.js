@@ -211,88 +211,91 @@ class Coffee
 {
     constructor(jsonObject)
     {
-        this.title = jsonObject.title;
-        this.url = jsonObject.image;
-        this.description=jsonObject.description;
+    this.title = jsonObject.title;
+    this.url = jsonObject.image;
+    this.description=jsonObject.description;
     }
     getTitle(){return this.title;}
     getImage(){return this.url;}
     getDescription(){return this.description;}
 }
 
-        let map = new Map();
-        json.forEach(element=>{
-            map.set(element.id, new Coffee(element));
-        });
+let map = new Map();
+json.forEach(element=>{
+    map.set(element.id, new Coffee(element));
+});
 
-        let set = new Set();
-        json.forEach(element=>{
-            element.ingredients.forEach(ingredient=>{
-                set.add(ingredient);
-            })
-        });
-        
-        document.addEventListener('DOMContentLoaded', function() {
-            set.forEach(ingredient=>{
-                let chBox = document.createElement('input');
-                chBox.type = 'checkbox';
-                chBox.className='checkbox';
-                chBox.id=ingredient;
-                let label = document.createElement('label');
-                label.textContent=ingredient;
-                chBox.onclick = function(){
-                    if(chBox.checked===true)
-                    {
-                        add(ingredient);
-                    }
-                    else{
-                        remove(ingredient);
-                    }
-                }
-                var container = document.getElementById('layout');
-                let div = document.createElement('div');
-                div.appendChild(chBox);
-                div.appendChild(label);
-                container.appendChild(div);
-            });
-        }, false);
+let set = new Set();
+json.forEach(element=>{
+    element.ingredients.forEach(ingredient=>{
+        set.add(ingredient);
+    })
+});
 
-        function add(text) {
-            coffee.add(text);
-            console.log(coffee);
-        }
-        function remove(text)
-        {
-            coffee.delete(text);
-            console.log(coffee);
-        }
-
-        function prepareCoffee() {
-        let size = coffee.size;
-        let idCoffee = null;
-        let array = Array.from(coffee);
-        json.forEach(element => {
-            if(element.ingredients.length === size) {
-                if(element.ingredients.every(function (i){ return array.includes(i); })){
-                    idCoffee=element.id;
-                    return;
-                }
+document.addEventListener('DOMContentLoaded', function() {
+    let i = 0;
+    set.forEach(ingredient=>{
+        let chBox = document.createElement('input');
+        chBox.type = 'checkbox';
+        chBox.className='checkbox';
+        chBox.id=ingredient;
+        let label = document.createElement('label');
+        label.textContent=ingredient;
+        chBox.onclick = function(){
+            if(chBox.checked===true)
+            {
+                add(ingredient);
             }
-        });
-        delete array;
-        let img = document.getElementById("imageCoffee");
-        let desc = document.getElementById("descriptionCoffee");
-        let title = document.getElementById("titleCoffee");
-        if(idCoffee===null)
-        {
-            img.src = "https://twizz.ru/wp-content/uploads/2019/02/2-29.jpg";
-            desc.textContent="Тот самый вкус веника из детства";
-            title.textContent="МММ... Руссиано";
+            else{
+                remove(ingredient);
+            }
         }
-        else
-        {
-            img.src = map.get(idCoffee).getImage();
-            desc.textContent=map.get(idCoffee).getDescription();
-            title.textContent=map.get(idCoffee).getTitle();
+        let container = document.getElementById(`row${i%4}`);
+        let div = document.createElement('div');
+        div.appendChild(chBox);
+        div.appendChild(label);
+        container.appendChild(div);
+        i++;
+    });
+}, false);
+
+function add(text) {
+    coffee.add(text);
+    console.log(coffee);
+    prepareCoffee();
+}
+function remove(text)
+{
+    coffee.delete(text);
+    console.log(coffee);
+    prepareCoffee();
+}
+
+function prepareCoffee() {
+    let size = coffee.size;
+    let idCoffee = null;
+    let array = Array.from(coffee);
+    json.forEach(element => {
+        if(element.ingredients.length === size) {
+            if(element.ingredients.every(function (i){ return array.includes(i); })){
+                idCoffee=element.id;
+                return;
+            }
         }
-        }
+    });
+    let img = document.getElementById("imageCoffee");
+    let desc = document.getElementById("descriptionCoffee");
+    let title = document.getElementById("titleCoffee");
+    if(idCoffee===null)
+    {
+        img.src = "https://podarki-moscow.ru/wa-data/public/shop/products/78/41/14178/images/36811/36811.750x0.jpg";
+        desc.textContent="Данный кофе не получился, но не унывайте. Попробуйте выбрать другие ингридиенты";
+        title.textContent="Эх..."
+    }
+    else
+    {
+        img.src = map.get(idCoffee).getImage();
+        desc.textContent=map.get(idCoffee).getDescription();
+        title.textContent=map.get(idCoffee).getTitle();
+    }
+}
