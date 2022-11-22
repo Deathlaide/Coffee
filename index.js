@@ -70,26 +70,6 @@
         "id": 7,
     },
     {
-        "title": "Red Eye",
-        "description": "Named after those pesky midnight flights, a red eye can cure any tiresome morning. A full cup of hot coffee with an espresso shot mixed in, this will definitely get your heart racing.",
-        "ingredients": [
-            "Coffee",
-            "Espresso",
-        ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Linea_doubleespresso.jpg",
-        "id": 8,
-    },
-    {
-        "title": "Galão",
-        "description": "Originating in Portugal, this hot coffee drink is closely related to the latte and cappuccino. Only difference is it contains about twice as much foamed milk, making it a lighter drink compared to the other two.",
-        "ingredients": [
-            "Espresso",
-            "Foamed milk",
-        ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Gal%C3%A3o.jpg/1280px-Gal%C3%A3o.jpg",
-        "id": 9,
-    },
-    {
         "title": "Lungo",
         "description": "A lungo is a long-pull espresso. The longer the pull, the more caffeine there is and the more ounces you can enjoy.",
         "ingredients": [
@@ -118,15 +98,6 @@
         ],
         "image": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Mocaccino-Coffee.jpg",
         "id": 12,
-    },
-    {
-        "title": "Ristretto",
-        "description": "Ristretto is an espresso shot. It uses less hot water which creates a sweeter flavor compared to the bitter taste of a traditional shot of espresso or a doppio.",
-        "ingredients": [
-            "Short pulled espresso",
-        ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/1/12/Doppio_ristretto_Chiang_Mai.jpg",
-        "id": 13,
     },
     {
         "title": "Flat White",
@@ -171,17 +142,6 @@
         "id": 17,
     },
     {
-        "title": "Guayoyo",
-        "description": "Traditional venezuelan coffee prepared by filtering the ground coffee in a cone of cloth and pouring hot water on top of it. It's prefferably drinked wihout milk nor cream.",
-        "ingredients": [
-            "Coffee",
-            "Traditional",
-            "Hot Water",
-        ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG",
-        "id": 18,
-    },
-    {
         "title": "Cortadito",
         "description": "Traditional cuban coffee method where a bit of freshly brewed coffee is mixed with sugar to create a highly sugared paste. Then add the rest of the coffee and stir adding milk until a 50/50 ratio is achieved.",
         "ingredients": [
@@ -192,18 +152,6 @@
         ],
         "image": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Cuban_coffee-_2013-04-05_14-30.jpg",
         "id": 19,
-    },
-    {
-        "title": "Aguapanela Coffee",
-        "description": "Bring panela and coffee to a boil in a small pan for 30 minutes until panela is melted. Brew your coffee using your favorite brewing technique but add the hot aguapanela instead of hot water. Delicious sweetened coffee is ready.",
-        "ingredients": [
-            "Coffee",
-            "Sweet",
-            "Panela",
-            "Traditional",
-        ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Agua_Panela_con_Queso_Fresco_at_La_Puerta_Falsa_%285617496209%29.jpg/640px-Agua_Panela_con_Queso_Fresco_at_La_Puerta_Falsa_%285617496209%29.jpg",
-        "id": 20,
     },
 ];
 
