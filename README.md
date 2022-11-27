@@ -16,5 +16,5 @@
 Данный сайт позволяет выбрать кофе по ингридиентам.
 Сайт разрабатывали:
 1. Арцибасова А.В. ([Deathlaide](https://github.com/Deathlaide))
-2. Ратчин Г.В.
+2. Ратчин Г.В. ([CrazyEgor14](https://github.com/CrazyEgor14))
 3. Грошев В.П. ([Golfriman](https://github.com/Golfriman))
