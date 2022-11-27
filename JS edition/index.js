@@ -7,7 +7,7 @@ const json = [
         "ingredients": [
             "Coffee",
         ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG",
+        "image": "./img/Black.png",
         "id": 1,
     },
     {
@@ -17,7 +17,7 @@ const json = [
             "Espresso",
             "Steamed Milk",
         ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Latte_at_Doppio_Ristretto_Chiang_Mai_01.jpg/509px-Latte_at_Doppio_Ristretto_Chiang_Mai_01.jpg",
+        "image": "img/Latte.png",
         "id": 2,
     },
     {
@@ -28,7 +28,7 @@ const json = [
             "Steamed Milk",
             "Foam",
         ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Wet_Cappuccino_with_heart_latte_art.jpg",
+        "image": "img/Cappuccino.png",
         "id": 3,
     },
     {
@@ -38,7 +38,7 @@ const json = [
             "Espresso",
             "Hot Water",
         ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Hokitika_Cheese_and_Deli%2C_Hokitika_%283526706594%29.jpg/1280px-Hokitika_Cheese_and_Deli%2C_Hokitika_%283526706594%29.jpg",
+        "image": "img.Americano.png",
         "id": 4,
     },
     {
@@ -47,7 +47,7 @@ const json = [
         "ingredients": [
             "1oz Espresso",
         ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Tazzina_di_caff%C3%A8_a_Ventimiglia.jpg",
+        "image": "img/Espresso.png",
         "id": 5,
     },
     {
@@ -56,17 +56,17 @@ const json = [
         "ingredients": [
             "2oz Espresso",
         ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Doppio.jpg/2560px-Doppio.jpg",
+        "image": "img/Doppio.png",
         "id": 6,
     },
     {
         "title": "Cortado",
-        "description": "Like yin and yang, a cortado is the perfect balance of espresso and warm steamed milk. The milk is used to cut back on the espresso’s acidity.",
+        "description": "Like yin and yang, a cortado is the perfect balance of espresso and warm steamed milk. The milk is used to cut back on the espressoвЂ™s acidity.",
         "ingredients": [
             "1oz Espresso",
             "1oz Steamed Milk",
         ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Caf%C3%A9Cortado%28Tallat%29.jpg",
+        "image": "img/Cortado.png",
         "id": 7,
     },
     {
@@ -75,38 +75,38 @@ const json = [
         "ingredients": [
             "Long pulled espresso",
         ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Caff%C3%A8_lungo.JPG",
+        "image": "img/Lungo.png",
         "id": 10,
     },
     {
         "title": "Macchiato",
-        "description": "The macchiato is another espresso-based drink that has a small amount of foam on top. It’s the happy medium between a cappuccino and a doppio.",
+        "description": "The macchiato is another espresso-based drink that has a small amount of foam on top. ItвЂ™s the happy medium between a cappuccino and a doppio.",
         "ingredients": [
             "Espresso",
             "Foam",
         ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/0/07/Caff%C3%A8_Espresso_Macchiato_Schiumato.jpg",
+        "image": "img/Macchiato.png",
         "id": 11,
     },
     {
         "title": "Mocha",
-        "description": "For all you chocolate lovers out there, you’ll fall in love with a mocha (or maybe you already have). The mocha is a chocolate espresso drink with steamed milk and foam.",
+        "description": "For all you chocolate lovers out there, youвЂ™ll fall in love with a mocha (or maybe you already have). The mocha is a chocolate espresso drink with steamed milk and foam.",
         "ingredients": [
             "Espresso",
             "Steamed Milk",
             "Chocolate",
         ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Mocaccino-Coffee.jpg",
+        "image": "img/Mocha.png",
         "id": 12,
     },
     {
         "title": "Flat White",
-        "description": "This Aussie-born drink is basically a cappuccino without the foam or chocolate sprinkle. It’s an espresso drink with steamed milk.",
+        "description": "This Aussie-born drink is basically a cappuccino without the foam or chocolate sprinkle. ItвЂ™s an espresso drink with steamed milk.",
         "ingredients": [
             "Espresso",
             "Steamed Milk",
         ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Flat_white_coffee_with_pretty_feather_pattern.jpg",
+        "image": "img/Flat White.png",
         "id": 14,
     },
     {
@@ -116,17 +116,17 @@ const json = [
             "Espresso",
             "Ice cream",
         ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Vinoteca%2C_Smithfield%2C_London_%284485849609%29.jpg",
+        "image": "./img/Affogato.png",
         "id": 15,
     },
     {
         "title": "Café au Lait",
-        "description": "Café au lait is perfect for the coffee minimalist who wants a bit more flavor. Just add a splash of warm milk to your coffee and you’re all set!",
+        "description": "Café au Lait is perfect for the coffee minimalist who wants a bit more flavor. Just add a splash of warm milk to your coffee and youвЂ™re all set!",
         "ingredients": [
             "Coffee",
             "Steamed Milk",
         ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/0/06/Latte_art.jpg",
+        "image": "img/Café au Lait.png",
         "id": 16,
     },
     {
@@ -138,7 +138,7 @@ const json = [
             "Sugar",
             "Cream",
         ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/6/61/Irish_coffee_glass.jpg",
+        "image": "img/Irish.png",
         "id": 17,
     },
     {
@@ -150,28 +150,10 @@ const json = [
             "Sugar",
             "Milk",
         ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Cuban_coffee-_2013-04-05_14-30.jpg",
+        "image": "img/Cortadito.png",
         "id": 19,
     },
-];
-
-class Coffee
-{
-    constructor(jsonObject)
-    {
-    this.title = jsonObject.title;
-    this.url = jsonObject.image;
-    this.description=jsonObject.description;
-    }
-    getTitle(){return this.title;}
-    getImage(){return this.url;}
-    getDescription(){return this.description;}
-}
-
-let map = new Map();
-json.forEach(element=>{
-    map.set(element.id, new Coffee(element));
-});
+  ];
 
 let set = new Set();
 json.forEach(element=>{
@@ -181,29 +163,51 @@ json.forEach(element=>{
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    let i = 0;
     set.forEach(ingredient=>{
-        let chBox = document.createElement('input');
-        chBox.type = 'checkbox';
-        chBox.className='checkbox';
-        chBox.id=ingredient;
-        let label = document.createElement('label');
-        label.textContent=ingredient;
-        chBox.onclick = function(){
-            if(chBox.checked===true)
-            {
+
+        let ingredientsItem = document.createElement('div');
+        ingredientsItem.className = "ingredientsItem";
+
+        let ingredientName = document.createElement('div');
+        ingredientName.className = "ingredientName";
+
+        let ingredientImage = document.createElement('div');
+        ingredientImage.className = "ingredientImage";
+        ingredientImage.textContent = ingredient.slice(0, 2);
+
+        ingredientName.appendChild(ingredientImage);
+
+        let ingredientsLabel = document.createElement('label');
+        ingredientsLabel.className = "ingredientsLabel";
+        ingredientsLabel.htmlFor = ingredient;
+        ingredientsLabel.textContent = ingredient;
+
+        ingredientName.appendChild(ingredientsLabel);
+
+        let checkbox = document.createElement('input');
+        checkbox.className = "checkbox";
+        checkbox.type = "checkbox";
+        checkbox.id = ingredient;
+        checkbox.name = ingredient;
+
+        checkbox.onclick = function(){
+            if(checkbox.checked) {
                 add(ingredient);
             }
-            else{
+            else {
                 remove(ingredient);
             }
         }
-        let container = document.getElementById(`row${i%4}`);
-        let div = document.createElement('div');
-        div.appendChild(chBox);
-        div.appendChild(label);
-        container.appendChild(div);
-        i++;
+
+        ingredientsItem.appendChild(ingredientName);
+        ingredientsItem.appendChild(checkbox);
+
+        let ingredients = document.getElementById("ingredients");
+        ingredients.appendChild(ingredientsItem);
+
+        
+
+
     });
 }, false);
 
@@ -221,29 +225,51 @@ function remove(text)
 
 function prepareCoffee() {
     let size = coffee.size;
-    let idCoffee = null;
+    let сoffeeItem = null;
+    let flag = false;
     let array = Array.from(coffee);
     json.forEach(element => {
         if(element.ingredients.length === size) {
             if(element.ingredients.every(function (i){ return array.includes(i); })){
-                idCoffee=element.id;
+                сoffeeItem = element;
+                console.log(сoffeeItem);
+                flag = true;
                 return;
             }
         }
     });
-    let img = document.getElementById("imageCoffee");
-    let desc = document.getElementById("descriptionCoffee");
-    let title = document.getElementById("titleCoffee");
-    if(idCoffee===null)
-    {
-        img.src = "https://podarki-moscow.ru/wa-data/public/shop/products/78/41/14178/images/36811/36811.750x0.jpg";
-        desc.textContent="Данный кофе не получился, но не унывайте. Попробуйте выбрать другие ингридиенты";
-        title.textContent="Эх..."
+    if(flag) {
+        const getCoffeeCard = document.getElementById("coffeeCard");
+        if(getCoffeeCard != null) getCoffeeCard.remove();
+
+        let coffeeCard = document.createElement("div");
+        coffeeCard.className = "coffeeCard";
+        coffeeCard.id = "coffeeCard";
+        let coffeeImg = document.createElement("img");
+        coffeeImg.className = "coffeeImg";
+        coffeeImg.src = сoffeeItem.image
+
+        let cardContent = document.createElement("div");
+        cardContent.className = "cardContent";
+
+        let coffeeName = document.createElement("div");
+        coffeeName.className = "coffeeName";
+        coffeeName.textContent = сoffeeItem.title;
+        let coffeeDescription = document.createElement("div");
+        coffeeDescription.className = "coffeeDescription";
+        coffeeDescription.textContent = сoffeeItem.description;
+
+        cardContent.appendChild(coffeeName);
+        cardContent.appendChild(coffeeDescription);
+
+        coffeeCard.appendChild(coffeeImg);
+        coffeeCard.appendChild(cardContent);
+        let card = document.getElementById("card");
+        card.appendChild(coffeeCard);
     }
-    else
-    {
-        img.src = map.get(idCoffee).getImage();
-        desc.textContent=map.get(idCoffee).getDescription();
-        title.textContent=map.get(idCoffee).getTitle();
+    else{
+        const getCoffeeCard = document.getElementById('coffeeCard');
+        getCoffeeCard.remove();
     }
+    
 }
