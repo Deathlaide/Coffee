@@ -1,6 +1,5 @@
- let coffee = new Set();
-
-const json = [
+ let coffee=new Set();
+const json=[
     {
         "title": "Black",
         "description": "Black coffee is as simple as it gets with ground coffee beans steeped in hot water, served warm. And if you want to sound fancy, you can call black coffee by its proper name: cafe noir.",
@@ -154,42 +153,32 @@ const json = [
         "id": 19,
     },
   ];
-
 let set = new Set();
 json.forEach(element=>{
     element.ingredients.forEach(ingredient=>{
         set.add(ingredient);
     })
 });
-
 document.addEventListener('DOMContentLoaded', function() {
     set.forEach(ingredient=>{
-
         let ingredientsItem = document.createElement('div');
         ingredientsItem.className = "ingredientsItem";
-
         let ingredientName = document.createElement('div');
         ingredientName.className = "ingredientName";
-
         let ingredientImage = document.createElement('div');
         ingredientImage.className = "ingredientImage";
         ingredientImage.textContent = ingredient.slice(0, 2);
-
         ingredientName.appendChild(ingredientImage);
-
         let ingredientsLabel = document.createElement('label');
         ingredientsLabel.className = "ingredientsLabel";
         ingredientsLabel.htmlFor = ingredient;
         ingredientsLabel.textContent = ingredient;
-
         ingredientName.appendChild(ingredientsLabel);
-
         let checkbox = document.createElement('input');
         checkbox.className = "checkbox";
         checkbox.type = "checkbox";
         checkbox.id = ingredient;
         checkbox.name = ingredient;
-
         checkbox.onclick = function(){
             if(checkbox.checked) {
                 add(ingredient);
@@ -198,19 +187,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 remove(ingredient);
             }
         }
-
         ingredientsItem.appendChild(ingredientName);
         ingredientsItem.appendChild(checkbox);
-
         let ingredients = document.getElementById("ingredients");
         ingredients.appendChild(ingredientsItem);
-
-        
-
-
     });
 }, false);
-
 function add(text) {
     coffee.add(text);
     console.log(coffee);
@@ -222,7 +204,6 @@ function remove(text)
     console.log(coffee);
     prepareCoffee();
 }
-
 function prepareCoffee() {
     let size = coffee.size;
     let сoffeeItem = null;
@@ -241,27 +222,22 @@ function prepareCoffee() {
     if(flag) {
         const getCoffeeCard = document.getElementById("coffeeCard");
         if(getCoffeeCard != null) getCoffeeCard.remove();
-
         let coffeeCard = document.createElement("div");
         coffeeCard.className = "coffeeCard";
         coffeeCard.id = "coffeeCard";
         let coffeeImg = document.createElement("img");
         coffeeImg.className = "coffeeImg";
         coffeeImg.src = сoffeeItem.image
-
         let cardContent = document.createElement("div");
         cardContent.className = "cardContent";
-
         let coffeeName = document.createElement("div");
         coffeeName.className = "coffeeName";
         coffeeName.textContent = сoffeeItem.title;
         let coffeeDescription = document.createElement("div");
         coffeeDescription.className = "coffeeDescription";
         coffeeDescription.textContent = сoffeeItem.description;
-
         cardContent.appendChild(coffeeName);
         cardContent.appendChild(coffeeDescription);
-
         coffeeCard.appendChild(coffeeImg);
         coffeeCard.appendChild(cardContent);
         let card = document.getElementById("card");
@@ -271,5 +247,4 @@ function prepareCoffee() {
         const getCoffeeCard = document.getElementById('coffeeCard');
         getCoffeeCard.remove();
     }
-    
 }
