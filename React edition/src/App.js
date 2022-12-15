@@ -2,12 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 import { data, getIngredients, getCoffeeById } from './data'
 import {useEffect, useRef, useState} from "react";
-
 function App() {
   const ingredients = getIngredients();
   const [selectedIngredients, setIngredients] = useState([]);
   const [selectedCoffee, setCoffee] = useState(null)
-
   const handleIngredientChange = ({ checked }, ing) => {
     if (checked) {
       setIngredients((prev) => [...prev, ing])
@@ -15,11 +13,9 @@ function App() {
       setIngredients((prev) => prev.filter((item) => item !== ing))
     }
   }
-
-
   useEffect(() => {
-      let size = selectedIngredients.length
-      let flag = false
+      let size=selectedIngredients.length
+      let flag=false
       data.forEach(element => {
           if(element.ingredients.length === size) {
               if(element.ingredients.every(i => selectedIngredients.includes(i))) {
@@ -31,9 +27,7 @@ function App() {
       if (!flag) {
           setCoffee(null)
       }
-
   }, [JSON.stringify(selectedIngredients)])
-
   return (
     <div className="App">
       <div className="header">
@@ -53,7 +47,6 @@ function App() {
             </div>
         ))}
       </div>
-
         {selectedCoffee ? (
             <div className={'coffeeCard'}>
                 <img className={"coffeeImg"} src={selectedCoffee.image} alt=""/>
@@ -65,7 +58,6 @@ function App() {
                         {selectedCoffee.description}
                     </div>
                 </div>
-
             </div>
         ) : null}
     </div>
