@@ -13,7 +13,7 @@
   <img src="https://media.giphy.com/media/3osxYriVAzYEW5Le92/giphy.gif" width="100"/>
 </div>
 
-Данный сайт позволяет выбрать кофе по ингридиентам.
+Данный сайт позволяет выбрать кофе по ингредиентам.
 Сайт разрабатывали:
 1. Арцибасова А.В. ([Deathlaide](https://github.com/Deathlaide))
 2. Ратчин Г.В. ([CrazyEgor14](https://github.com/CrazyEgor14))
